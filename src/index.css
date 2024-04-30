@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif !important;
+  background-color: var(--main);
+}
+
+:root {
+  --main: #0d0714;
+  --secondary: #15101c;
+  --primary: #9e78cf;
+  --ended: #78cfb0;
+  --active: #3e1671;
+  --white: #ffffff;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 640px;
+}
+.options svg {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.options svg path {
+  transition: 0.2s;
+  fill: var(--primary);
+}
+.options svg:hover path {
+  fill: var(--active);
+}
